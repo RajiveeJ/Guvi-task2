@@ -1,0 +1,39 @@
+Q1.
+var person={
+ 	first_name:"johnny",
+  	last_name: "johnson",
+	phone:"703-3424-1111"
+};
+for (var property in person) {
+  	console.log(property,":",person[property]);
+}
+
+var arr = [ {"id":"10", "class": "child-of-9"}, {"id":"11", "class": "child-of-10"}];
+    
+for (var i = 0; i < arr.length; i++){
+  document.write("<br><br>array index: " + i);
+  var obj = arr[i];
+  for (var key in obj){
+    var value = obj[key];
+    document.write("<br> - " + key + ": " + value);
+  }
+}
+
+Q2.
+var resume=[{"Name":"Rajivee.J",
+             "qualification":"B.Tech",
+             "email":"raji@gmail.com",
+            "Experience":"2.5",
+        "Address":"abc",
+    "Domain":"Full stack development",}];
+ //console.log(resume);
+resume.forEach(function() {
+    console.log(resume);
+});
+
+Q3.
+Window is the main JavaScript object root,  the global object in a browser, and it can also be treated as the root of the document object model. We can access it as window.
+
+window.screen or just screen is a small information object about physical screen dimensions.
+
+window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
